@@ -1,0 +1,55 @@
+body {
+  /* soft-reset */
+  margin: 0;
+  padding: 0;
+  background-color: orange;
+  font-family: serif;
+}
+
+* {
+  /* for all: this makes the padding and margin to be included in the final size of the box. It makes it easiser for aligning items without it being a mess.*/
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  width: 500px;
+  height: 540px;
+  background-color: white;
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+}
+
+.box {
+  border-color: black;
+  border-width: thin;
+  background-color: white;
+}
+
+#navbar {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 30px;
+  width: 60px;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: white;
+  color: black;
+  margin: 2px;
+}
